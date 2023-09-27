@@ -33,16 +33,14 @@ e all’autore;
 ●       
 migliorare l’efficienza del sistema di prenotazioni
 ormai obsoleto e poco sicuro: il nostro strumento fornirà alla biblioteca e ai
-suoi addetti, la possibilità di tenere traccia di tutti i libri in tempo reale;
+suoi addetti, la possibilità di tenere traccia di tutti i libri in tempo reale;  
 
 
-
+<br><br>
 Coerentemente con quanto sopra riportato, il progetto si
-prefigge di facilitare l’utilizzo della biblioteca
+prefigge di facilitare l’utilizzo della biblioteca scolastica:
 
-
-
-scolastica: Tramite il nostro strumento,
+Tramite il nostro strumento,
 
 
 

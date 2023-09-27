@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Medusa's Library </title>
+    <link rel="stylesheet" href="insert.css">
+    <link rel="stylesheet" href="../nav/nav.css">
+    <link rel="stylesheet" href="../things/colors.css">
+    <script type="text/javascript" src="insert.js"></script>
+
+    <!--script per importare parti di codice-->
+    <script src="https://code.jquery.com/jquery-1.12.2.js"></script>
+</head>
+<body > 
+
+    <div id="nav-placeholder"></div>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("../nav/nav.php");
+    });
+    </script>
+
+    <div class="main-container">
+        <center><div class="selection">
+            <button href="#delete" onclick="insertbook()">Inserisci Libro</button>
+            <button href="#insert" onclick="deletebook()">Cancella Libro</button>
+        </div></center>
+        <div class="container">
+        <div class="form" id="insert">
+            <form class="insert" >
+                
+                    <label class="titolo" for="titolo">Titolo Del libro</label>
+                    <input type="text" placeholder="Titolo.." required name="titolo">
+
+                    <label class="titolo" for="autore">Autore</label>
+                    <input type="text" placeholder="Autore.." required name="autore">
+
+                    <label class="titolo" for="desc">Descrizione</label>
+                    <textarea placeholder="Descrizione.." rows="8" required name="desc"></textarea>
+
+                    <div class="sub-insert">
+
+                    <div>
+                        <label class="titolo" for="year">Anno Pubblicazione</label>
+                        <input type="year" placeholder="es. 2023" required name="year">
+                    </div>
+
+                    <div>
+                        <label class="titolo" for="isbn">ISBN</label>
+                        <input type="text" placeholder="es. 978-3-7736-7621-4" required name="isbn">
+                    </div>
+
+                    <div>
+                        <label class="titolo" for="casaed">Casa Editrice</label>
+                        <input type="text" placeholder="es. Einaudi" required name="casaed">
+                    </div>
+
+                    <div>
+                        <label class="titolo" for="genere" for="genere">Genere</label>
+                        <select name="genere" id="genere" required name="genere">
+                            <option disabled selected value> Genere </option>
+                            <option value="romanzo Storico">Romanzo Storico</option>
+                            <option value="giallo">Giallo</option>
+                            <option value="biografia">Biografia</option>
+                            <option value="avventura">Avventura</option>
+                            <option value="azione">Azione</option>
+                            <option value="fantascienza">Fantascienza</option>
+                            <option value="horror">Horror</option>
+                            <option value="umoristico">Umoristico</option>
+                            <option value="distopia">Distopia</option>
+                        </select>
+                    </div>
+                </div>
+
+                        <label class="titolo" for="image">Immagine di Copertina</label>
+                        <input type="file" class="custom-file-input" name="image" id="">
+                        <p>si prega di scegliere un' immagine con una risoluzione adeguata e in alta definizione</p>
+
+                        <input type="submit" name="" id="">
+
+                
+            </form>
+
+     
+        </div>
+
+        <div class="form" id="delete">
+            <form action="" class="delete" >
+                <label for="remove-isbn" class="titolo">ISBN</label>
+                <input type="text" placeholder="es. 2023" required name="remove-isbn">
+
+                <input type="submit" name="" id="">
+            </form>
+        </div>       
+
+        </div>
+    </div>
+

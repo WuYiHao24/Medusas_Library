@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .main-container{
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+  }
+
+  .selection{
+    display: inline-block;
+    width: 100%;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form{
+    width: 50%;
+  }
+
+  .main-container input, select, textarea{
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin: 5px 5px 20px 20px;
+  }
+
+  .main-container input:not(input[type="file"]), select, textarea{
+    border: 1px solid black;
+  }
+
+  .main-container  textarea{
+    resize: none;
+  }
+
+  .main-container input, select{
+    height: 35px;
+  }
+
+
+  .main-container  input::placeholder{
+    color: var(--border);
+  }
+  
+  label{
+    padding-left: 20px;
+    display: inline-block;
+  }
+
+  .selection{
+    margin-bottom: 30px;
+  }
+
+  .sub-insert{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 94%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sub-insert input, .sub-insert select{
+    width: 80%;
+    margin: 0;
+  }
+
+  .sub-insert .titolo{
+    font-size: 0.7rem;
+    padding: 0;
+  }
+
+
+
+  
+  .sub-insert div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  p{
+    font-size: 10px;
+    color: var(--border);
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .main-container input[type=file]{
+    margin-bottom: 0px;
+  }
+
+  .main-container input[type=submit]{
+    width: 120px;
+  }
+
+  .main-container  form input[type=submit]{
+    background: var(--button);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .main-container form input[type=submit]:hover{
+    background: var(--button-hover);
+    color: white;
+  }
+
+  .main-container .selection button{
+    text-decoration: none;
+    color: var(--sectiontext);
+    border: 0 solid black;
+    background: none;
+  }
+
+  .selection{
+    margin-top: 10px;
+  }
+
+  .main-container .selection button:first-child{
+    border-right: 1px solid var(--border);
+    padding: 5px;
+  }
+
+  .main-container select{
+    color: var(--border);
+
+
+  }
+
+  #delete{
+    display: none;
+  }
+
+
+
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Seleziona';
+    display: inline-block;
+    background: var(--button);
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    color: white;
+    font-size: 10pt;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  } 

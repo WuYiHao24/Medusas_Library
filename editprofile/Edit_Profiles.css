@@ -1,0 +1,538 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  .blur{
+    filter: blur(10px);
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .safe-area{
+    width: 85vw;
+    margin: auto;
+  }
+
+  .container{
+    margin: 35px auto 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .edit-section ul a{
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .edit-section .section{
+    padding: 24px 24px 24px 35px;
+  }
+
+  .edit-section ul a div {
+    text-align: center;
+  }
+
+  .edit-section ul a div span{
+    color: var(--sectiontext);
+
+  }
+
+.edit-section, .settings{
+  border-radius: 7px;
+}
+
+.edit-section{
+    width: 200px;
+    border: 1px solid var(--border);
+    margin-right: 15px;
+    height: 85vh;
+}
+
+.edit-section ul li:first-child{
+    margin-top: 50px;
+    border-radius: 2px;
+}
+
+
+.edit-section ul li:not(:last-child){
+  border-bottom: 1px solid var(--darkerbackground);
+
+}
+
+.settings{
+    width: 70vw;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.settings-section{
+  height: fit-content;
+  width: 90%;
+  border-bottom: 1px solid var(--darkerbackground);
+}
+
+
+.settings-profile-info{
+  padding: 30px 15px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.settings-profile-info img{ 
+  aspect-ratio: 1/1;
+  width: 50px;
+  margin: 0 15px;
+}
+
+.data-profile-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-profile-info .data-profile-info span{
+  font-size: 0.9rem;
+}
+
+.settings-profile-info .data-profile-info p{
+  font-style: oblique;
+  font-size: 0.75rem;
+}
+
+.personal-parameter{
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-profile-parameter, .edit-phone-parameter, .edit-personal-parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-profile-parameter img{
+  aspect-ratio: 1/1;
+  width: 80px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+a.edit-action{
+  color: var(--editaction);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.edit-phone-parameter{
+  margin-left: 20px;
+}
+
+.edit-phone-parameter, .edit-personal-parameter{
+  justify-content: center;
+}
+
+.edit-phone-parameter span, .edit-phone-parameter p, .edit-phone-parameter a.edit-action, .edit-personal-parameter span,.edit-personal-parameter p, .edit-personal-parameter a.edit-action, .password-reset span a.edit-action{
+  font-size: 0.75rem;
+  padding: 2px;
+}
+
+.edit-phone-parameter p.phone-number, .password-reset p.password{
+  font-weight: 600 ;
+}
+
+.edit-phone-parameter p, .edit-personal-parameter p, .password-reset p.password{
+    font-style: oblique;
+  opacity: 0.75;
+}
+
+.edit-personal-parameter{
+  padding-left: 45px;
+}
+
+.password-reset{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 100%;
+}
+
+.password {
+  color: var(--sectiontext);
+	display: flex;
+	padding: 2px;
+	border: 1.5px solid var(--text) ;
+	border-radius: 20px;
+	height: 25px;
+	margin: 0;
+	margin-top: auto;
+  margin-bottom: auto;
+	width: 300px;
+	justify-content: space-between;
+  position: absolute;
+  right: 10%;
+}
+
+.password-block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.section-title{
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 30px;
+}
+
+.section-title1{
+  font-weight: 550;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+
+form .edit-action, form .password{
+  padding:0 10px;
+}
+
+.section-title, form a, form p {
+  margin-top:auto ;
+  margin-bottom: auto;
+}
+
+.radio-section ,.radio-option{
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-section{
+  width: 100%;
+}
+
+.radio-option label{
+  padding: 10px 0;
+  font-weight: 600;
+  
+}
+
+.radio-option{
+  padding-top: 20px;
+}
+
+.section-explain{
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 0.5rem;
+}
+
+
+.radio-option label input{
+  margin-right: 10px;
+}
+
+
+
+
+a.edit-action:hover{
+  color: var(--editaction-hover);
+}
+
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+
+
+
+.settings::-webkit-scrollbar {
+  width: 10px;
+}
+
+.settings::-webkit-scrollbar-track {
+border-radius: 10px;
+box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+
+.settings::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 50, .5);
+border-radius: 10px;
+box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+.form-icon-back {
+  position: absolute !important;
+  top: 5.3pc !important;
+  left: 0.9vw !important;
+  align-items: center;
+  display: flex;
+}
+  
+
+@media(max-width:768px){
+
+  form.form-icon-back {
+    position: absolute !important;
+    top: 4.5pc !important;
+    left: -2.1vw !important;
+    align-items: center;
+    display: flex;
+}
+
+  body{
+    scroll-margin-top: calc(69px + 0.5rem);
+}
+
+  .safe-area{
+    width: 100vw;
+    margin: auto;
+  }
+
+  .container{
+    justify-content: center;
+    width: 80vw;
+    margin: 50px auto 0;
+  }
+  
+  .edit-section {
+    width: 200px;
+    border: 1px solid var(--border);
+    margin-right: 15px;
+    height: 85vh;
+    display: none;
+  }
+
+
+  .edit-profile-parameter>form{
+    width: 22vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit-profile-parameter>input{
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .edit-profile-parameter>button{
+    width: fit-content;
+  }
+
+  .settings{
+    min-width: 95vw;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
+  .settings-section {
+    height: fit-content;
+    width: 100vw;
+    border-bottom: 1px solid var(--darkerbackground);
+}
+
+.settings-profile-info {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settings-profile-info>img{
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.password-reset>span{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.data-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+}
+
+
+.edit-phone-parameter, .edit-personal-parameter {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-profile-parameter {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  white-space: nowrap;
+}
+}
+
+.edit-personal-parameter{
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-profile-parameter>label{
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.section-explain {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 0.5rem;
+  margin-right: 8vw;
+  margin-left: 6vw;
+}
+
+
+@media(max-width:768px){
+
+  body{
+    scroll-margin-top: calc(69px + 0.5rem);
+}
+
+  .settings-profile-info {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.edit-personal-parameter{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+
+form>input,.edit-action,form>button{
+  margin-bottom: 7px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.edit-profile-parameter>form {
+  width: fit-content;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.edit-profile-parameter img{
+  margin-bottom: 1pc;
+}
+
+.edit-profile-parameter {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-fill-available;
+}
+
+.password {
+  padding: 0 10px;
+  min-width: 1vw;
+  max-width: 28vw;
+  right: 0px;
+}
+
+/* form>input {
+  justify-content: center;
+  display: flex;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 22px;
+  padding-top: 5px;
+} */
+
+.settings-section:first-child{
+  height: 80vw;
+}
+
+
+.edit-profile-parameter>form{
+  margin-bottom: 10px;
+}
+
+.password-reset {
+  display: flex;
+  flex-direction: column;
+  height: 190px;
+  width: 100%;
+}
+
+.password-reset>input{
+  padding: 11px;
+}
+
+.section-explain {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 0.5rem;
+  margin-right: 8vw;
+  margin-left: 5vw;
+}
+
+}

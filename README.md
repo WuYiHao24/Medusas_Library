@@ -64,3 +64,16 @@ l’addetto potrà decidere se affidare oppure no un libro all’utente (esempio
 libri più fragili o costosi saranno tenuti al sicuro).
 
 
+
+
+
+
+
+Ruoli/Tipi di Utenti
+●  Studente: prenotare libri (max 3 libri prenotati in ogni dato momento), visualizzare e gestire le proprie prenotazioni, inviare segnalazioni
+●  Docente: identico a Studente con unica differenza il fatto di poter avere più di 3 libri prenotati allo stesso tempo
+●  Bibliotecario: modificare/inserire/eliminare libri, gestire tutte le prenotazioni e segnalazioni
+●  Admin: gestione di utenti, libri e segnalazioni, ma non le prenotazioni
+
+
+

@@ -4,7 +4,7 @@
 
 
 ## [**Link al sito**](http://daniele-carlomusto.bounceme.net/MedusaLibrary/progetto5e/index.php)
-<br><br><br>
+<br><br>
 Il progetto nasce dall’esigenza di tornare a sfogliare
 libri. La biblioteca della nostra scuola è fornita di moltissimi libri che
 possono interessare ogni ambito. Perciò abbiamo ideato uno strumento, nella
